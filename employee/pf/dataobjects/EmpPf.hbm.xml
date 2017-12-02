@@ -1,0 +1,18 @@
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
+  
+ <hibernate-mapping>  
+  <class name="com.payroll.employee.pf.dataobjects.EmpPf" table="emp_pf">  
+    <id name="empId" type="integer" >  
+     <column name="emp_Id" sql-type="integer" not-null="true"/>  
+    </id>  
+    <property name="pfDate" column="pf_date" not-null="true"/> 
+    <property name="pfsCpfCntrbn" column="pfs_cpf_cntrb" not-null="true"/> 
+    <property name="apfAcpfCntrbn" column="apf_acpf_cntrb" not-null="true"/> 
+    <property name="pfLoneRecAmt" column="pf_lon_rec_amt" not-null="true"/>  
+    <property name="cfLoneRecAmt" column="cf_lon_rec_amt" not-null="true"/>  
+    <property name="status" column="status" not-null="true"/>  
+    <property name="rowUpdDate" column="ROW_UPD_DATE" not-null="true"/>
+  </class>  
+ </hibernate-mapping> 

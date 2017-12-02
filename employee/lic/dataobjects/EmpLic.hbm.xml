@@ -1,0 +1,16 @@
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
+  
+ <hibernate-mapping>  
+  <class name="com.payroll.employee.lic.dataobjects.EmpLic" table="emp_lic">  
+    <id name="empId" type="integer" >  
+     <column name="empId" sql-type="integer" not-null="true"/>  
+    </id>  
+    <property name="paymentDate" column="payment_date" not-null="true"/> 
+    <property name="policyNo" column="policy_no" not-null="true"/> 
+    <property name="instlmtAmt" column="install_amt" not-null="true"/> 
+    <property name="status" column="status" not-null="true"/>  
+    <property name="rowUpdDate" column="ROW_UPD_DATE" not-null="true"/> 
+  </class>  
+ </hibernate-mapping> 

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
+  
+ <hibernate-mapping>  
+  <class name="com.payroll.designation.dataobjects.Designation" table="DESIGNATION">  
+    <id name="designationId" type="integer" >  
+     	<column name="DESG_ID" sql-type="integer" not-null="true"></column>  
+    </id>  
+    <property name="designationName" column="designation_name" not-null="true"></property>
+    <property name="headId" column="head_id" not-null="true"></property>  
+    <property name="description" column="description" not-null="true"/>  
+    <property name="rowUpdDate" column="ROW_UPD_DATE" not-null="true"/>
+    <property name="status" column="status" not-null="true"/>
+  </class>  
+ </hibernate-mapping> 

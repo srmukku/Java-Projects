@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
+  
+ <hibernate-mapping>  
+  <class name="com.payroll.advance.dataobjects.Advance" table="advance">  
+    <composite-id>
+		<key-property name="empId" column="emp_id"  />
+		<key-property name="departmentId" column="dept_id" />
+		<key-property name="designationId" column="desg_id" />
+	</composite-id>
+    <property name="advanceAmount" column="adv_amt" not-null="true"></property>  
+    <property name="paymentDate" column="payment_date" not-null="true"/>
+  </class>  
+ </hibernate-mapping> 

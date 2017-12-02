@@ -1,0 +1,16 @@
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
+  
+ <hibernate-mapping>  
+  <class name="com.payroll.employee.dataobjects.EmpDesignation" table="emp_desg">  
+     <composite-id>
+		<key-property name="empId" column="emp_id"  />
+		<key-property name="designationId" column="desg_id" />
+		<key-property name="startDate" column="start_date" />
+	</composite-id>
+    <property name="lastWokingDate" column="lw_date" /> 
+    <property name="status" column="status" not-null="true"/>  
+    <property name="rowUpdDate" column="ROW_UPD_DATE" not-null="true"/>
+    </class>  
+ </hibernate-mapping> 

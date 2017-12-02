@@ -1,0 +1,14 @@
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
+  
+ <hibernate-mapping>  
+  <class name="com.payroll.department.dataobjects.Department" table="DEPARTMENT">  
+    <id name="departmentId" type="integer" >  
+     <column name="DEPT_ID" sql-type="integer" not-null="true"/>  
+    </id>  
+    <property name="departmantName" column="DEPARTMENT_NAME" not-null="true"/> 
+    <property name="status" column="status" not-null="true"/>  
+    <property name="rowUpdDate" column="ROW_UPD_DATE" not-null="true"/>  
+  </class>  
+ </hibernate-mapping> 

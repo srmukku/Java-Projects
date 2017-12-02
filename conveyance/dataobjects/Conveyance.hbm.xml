@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
+  
+ <hibernate-mapping>  
+  <class name="com.payroll.conveyance.dataobjects.Conveyance" table="convey_alwnce">  
+    <composite-id>
+		<key-property name="conveyanceId" column="id"  />
+		<key-property name="designationId" column="desg_id" />
+	</composite-id>
+    <property name="conveyanceAmount" column="con_amt" not-null="true"></property>  
+  </class>  
+ </hibernate-mapping> 

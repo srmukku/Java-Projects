@@ -1,0 +1,17 @@
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
+  
+ <hibernate-mapping>  
+  <class name="com.payroll.employee.leave.dataobjects.Leave" table="emp_leave">  
+   <id name="leaveId" type="integer" >  
+     <column name="leave_id" sql-type="integer" />  
+    </id>  
+   <property name="empId" column="empId" not-null="true"/>
+     <property name="leaveType" column="leave_type" not-null="true"/> 
+    <property name="noOfLeaves" column="no_of_leaves" not-null="true"/> 
+    <property name="leaveBalance" column="leave_bal" not-null="true"/>  
+    <property name="status" column="status" not-null="true"/>  
+    <property name="rowUpdDate" column="ROW_UPD_DATE" not-null="true"/>
+  </class>  
+ </hibernate-mapping> 

@@ -1,0 +1,31 @@
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
+  
+ <hibernate-mapping>  
+  <class name="com.payroll.employee.dataobjects.Employee" table="employee">  
+    <id name="employeeId" type="integer" >  
+     <column name="EMP_ID" sql-type="integer" not-null="true"/>  
+    </id>  
+    <property name="firstName" column="emp_fname" not-null="true"/>
+    <property name="lastName" column="emp_lname" not-null="true"/>
+    <property name="middleName" column="emp_mname" />
+    <property name="email" column="emp_email" />
+    <property name="phone" column="emp_phone" not-null="true"/>
+    <property name="joiningDate" column="emp_joining_date" not-null="true"/>
+   <!-- <property name="lastWorkingDate" column="EMP_LWD_DATE" /> -->  
+    <property name="addressLine1" column="address_line1" not-null="true"/>
+    <property name="addressLine2" column="address_line2" not-null="true"/>
+    <property name="addressLine3" column="address_line3" not-null="true"/>
+    <property name="dob" column="birth_date" not-null="true"/>
+    <property name="rowUpdatedDate" column="ROW_UPD_DATE" not-null="true"/>
+    <property name="contactNo" column="emp_contactno" />
+    <property name="pan" column="emp_pan" />
+    <property name="adharNo" column="emp_aadhar" />
+    <property name="lastPromotionDate" column="emp_lst_promo_dt" />
+    <property name="status" column="status" />
+    <property name="gender" column="gender" />
+    <!-- <property name="designationId" column="designation_id" not-null="true"/>  
+    <property name="departmentId" column="department_id"/> -->  
+  </class>  
+ </hibernate-mapping> 
